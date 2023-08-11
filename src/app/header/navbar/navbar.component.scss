@@ -1,0 +1,40 @@
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.btn-grow:hover {
+  transform: scale(1.1);
+  transition: 0.2s (ease);
+  border-style: solid;
+  border-color: rgb(
+    144,
+    178,
+    85
+  ); /* Düğmenin 1.1 katı büyüklüğüne çıkmasını sağlar */
+}
+i.fa {
+  transform: rotate(90deg);
+}
+ul.li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav {
+  align-items: center;
+  padding-left: 270px;
+  padding-right: 270px;
+}
+* {
+  --text-opacity: 1;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(74, 85, 104, var(--text-opacity));
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
