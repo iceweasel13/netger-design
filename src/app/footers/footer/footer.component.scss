@@ -1,0 +1,30 @@
+element.style {
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+}
+
+.text-gray-200 {
+    --text-opacity: 1;
+    color: #edf2f7;
+    color: rgba(237,242,247,var(--text-opacity));
+}
+.bg-gray-700 {
+    --bg-opacity: 1;
+    background-color: #4a5568;
+    background-color: rgba(74,85,104,var(--bg-opacity));
+}
+@media (min-width: 640px){}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+
+h6{
+    flex: auto;
+}

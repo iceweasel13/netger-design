@@ -5,12 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { LinkComponent } from './link/link.component';
+import { ButtonComponent } from './button/button.component';
+import { LogoComponent } from './logo/logo.component';
+import { BannerComponent } from './banner/banner.component';
+import { WidgetComponent } from './widget/widget.component';
+import { CardComponent } from './card/card.component';
+import { NavbarTopComponent } from './navbar-top/navbar-top.component';
+import { FooterTopComponent } from './footer-top/footer-top.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    LinkComponent,
+    ButtonComponent,
+    LogoComponent,
+    BannerComponent,
+    WidgetComponent,
+    CardComponent,
+    NavbarTopComponent,
+    FooterTopComponent
   ],
   imports: [
     BrowserModule,
