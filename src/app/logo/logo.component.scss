@@ -1,6 +1,6 @@
 .logo-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 200fr)); /* Minimum 150px genişlikli sütunlar */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Minimum 150px genişlikli sütunlar */
     gap: 20px;
     justify-items: center;
     text-align: center;
