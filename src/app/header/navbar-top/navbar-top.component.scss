@@ -1,13 +1,14 @@
+.navbar {
+  font: optional;
+  font-weight: lighter;
+  padding-top: 0%;
+  .container-fluid {
+    display: inline;
+    background-color: #e2e8f0;
 
-.navbar{
-    .container-fluid{
-        display: inline;
-        background-color: #e2e8f0;
-        
-        
-        .leftright{
-            margin-right: 18%;
-            margin-left: 18%;
-        }
+    .leftright {
+      margin-right: 18%;
+      margin-left: 18%;
     }
+  }
 }
