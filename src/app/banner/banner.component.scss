@@ -19,10 +19,14 @@
     text-align: center;
     color: white;
   }h1{
-    font-family: 'Poppins'; 
+    font-family: PoppinsBold; 
     margin-bottom: 0.25rem;
     margin: 1rem;
     font-size: 4rem;;
+    font-weight: 100;
+  }
+  p{
+    font-size: 1.125rem;
   }
 }
 
@@ -31,3 +35,20 @@
   src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@media (max-width: 1024px) {
+  .container-fluid{
+      .banner-content{
+        h1{
+          font-size: 1.875rem;
+        }
+        p{
+          font-size: .875rem;
+        }
+      }
+  }
+}
