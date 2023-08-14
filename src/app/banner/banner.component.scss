@@ -1,133 +1,33 @@
-// * {
-//   width: 100%;
-//   height: 860px;
-// }
 
-// .banner {
-//   width: 100%;
-//   height: 80vh;
-//   background: url('https://netger.net/hero.webp') no-repeat;
-//   background-size: cover;
-//   color: white;
-//   text-align: center;
-// }
+.container-fluid {
+  position: relative;
+  overflow: hidden;
+  height: 570px;
+  padding: 0%;
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: 90%;
+  }
+  .banner-content {
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }h1{
+    font-family: 'Poppins'; 
+    margin-bottom: 0.25rem;
+    margin: 1rem;
+    font-size: 4rem;;
+  }
+}
 
-// .mb-1 {
-//     margin-bottom: 0.25rem;
-// }
-// .text-3xl {
-//     font-size: 1.875rem;
-// }
-// .font-bold {
-//     font-weight: 700;
-// }
-// .font-poppins {
-//     font-family: Poppins;
-// }
-// h1, h2, h3, h4, h5, h6 {
-//     font-size: inherit;
-//     font-weight: inherit;
-// }
-// blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
-//     margin: 0;
-// }
-// h1 {
-//     font-size: 2em;
-//     margin: 0.67em 0;
-// }
-// *, :after, :before {
-//     box-sizing: border-box;
-//     border: 0 solid #e2e8f0;
-// }
-// kullanıcı aracısı stil sayfası
-// h1 {
-//     display: block;
-//     font-size: 2em;
-//     margin-block-start: 0.67em;
-//     margin-block-end: 0.67em;
-//     margin-inline-start: 0px;
-//     margin-inline-end: 0px;
-//     font-weight: bold;
-// }
-// .text-white {
-//     --text-opacity: 1;
-//     color: #fff;
-//     color: rgba(255,255,255,var(--text-opacity));
-// }
-// .text-center {
-//     text-align: center;
-// }
-// .bg-gray-800 {
-//     --bg-opacity: 1;
-//     background-color: #2d3748;
-//     background-color: rgba(45,55,72,var(--bg-opacity));
-// }
-// @media (min-width: 640px){
-//   body {
-//     font-size: .75rem;
-// }
-// body {
-//     --bg-opacity: 1;
-//     background-color: #f7fafc;
-//     background-color: rgba(247,250,252,var(--bg-opacity));
-//     font-family: Rubik;
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-// }
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
 
-// }
-
-.hero-webp[data-v-3d3d80e0] {
-  background-image: url(/assets/hero.webp);
-}
-.hero[data-v-3d3d80e0] {
-  background-position: 50%;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  max-width: 2500px;
-  min-height: 520px;
-}
-.items-center {
-  align-items: center;
-}
-.flex {
-  display: flex;
-}
-.bg-gray-800 {
-  --bg-opacity: 1;
-  background-color: #2d3748;
-  background-color: rgba(45,55,72,var(--bg-opacity));
-}
-*, :after, :before {
-  box-sizing: border-box;
-  border: 0 solid #e2e8f0;
-}
-kullanıcı aracısı stil sayfası
-div {
-  display: block;
-}
-@media (min-width: 640px){
-body {
-  font-size: .75rem;
-}
-}
-body {
-  --bg-opacity: 1;
-  background-color: #f7fafc;
-  background-color: rgba(247,250,252,var(--bg-opacity));
-  font-family: Rubik;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-html {
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  line-height: 1.5;
-}
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-}
