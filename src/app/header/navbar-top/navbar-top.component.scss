@@ -1,7 +1,13 @@
-.container-fluid{
-    background-color: light;
-    
-    &row{
 
+.navbar{
+    .container-fluid{
+        display: inline;
+        background-color: #e2e8f0;
+        
+        
+        .leftright{
+            margin-right: 18%;
+            margin-left: 18%;
+        }
     }
 }
