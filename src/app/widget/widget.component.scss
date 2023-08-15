@@ -142,6 +142,11 @@
         .widget3{
             .row{
                 .col-6{
+                    
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    height: 100%;
+
                     .content{
                         .img{
 
