@@ -1,13 +1,32 @@
 
 .container-fluid{
+    
     padding: 24px;
     background-color: #4a5568;
     .row{
+        
         margin-left: 160px;
         margin-right: 160px;
+        color: #c3d5e0 !important;
+        
         a{
             text-decoration: none;
+            
         }
     }
     
+    
+    
 }
+@media (max-width: 1216px) {
+    .row {
+      display: block; 
+      text-align: center;
+    }
+  
+    .col-12 {
+      width: 100%;
+    }
+  }
+
+
