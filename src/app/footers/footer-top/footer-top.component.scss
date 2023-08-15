@@ -11,6 +11,12 @@
             justify-content: center;
             text-align: center;
             font-family: Poppins;
+            .bg-color{
+                width: 170px;
+                height: 50px;
+                background-color: white;
+                border-radius: 9999px;
+            }
             .icon{
                 height: 25px;
                 width: 25px;
@@ -19,9 +25,12 @@
                 height: 30px;
                 width: 50px;
             }
-            h1{
+            h1{ 
                 font-size: 1.25rem;
                 font-weight: 600;
+                margin-bottom: 0;
+                text-align: center;
+                
             }
         }
     }
