@@ -71,13 +71,12 @@
             margin:60px;
             margin-top: 20px;
             justify-content: center;
-            
             .col-6{
                 background-color: white;
                 padding: 0;
                 margin: 20px;
-                max-width: 562px;
-                max-height: 302px;
+                width: 562px;
+                height: 270px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 .content{
                     display: flex;
@@ -137,7 +136,51 @@
     src: url(../../assets/fonts/Poppins-Bold.ttf);
   }
 
+
+  @media (max-width: 1280px) {
+    .container-fluid{
+        .widget3{
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 19px;
+                margin-right: 19px;
+                .col-6{
+                    flex: 1;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    height: 100%;
+
+                    .content{
+                        .img{
+                            align-self: flex-end;
+                        }
+                    }
+                }
+            }
+            h1{
+
+            }
+            .line{
+                text-align: left;
+                margin: 0;
+            }
+            .row{
+                .col-6{
+                    .content{
+                        
+                    }
+                    .img{
   
+                    }
+                    .compaignText{
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1024px) {
     .container-fluid{
@@ -171,24 +214,3 @@
     }
     
     }
-
-    @media (max-width: 1280px) {
-        .container-fluid{
-            .widget3{
-                .row{
-                    text-align: center;
-                    .col-6{
-                        flex-basis: 100%;
-                        .img{
-                            align-items: center;
-                        }
-                        .text{
-                            padding-left: 0;
-                            margin-top: 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-   
