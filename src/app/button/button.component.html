@@ -1,1 +1,5 @@
-<p>button works!</p>
+<button [type]="type" class="btn">
+  <i>{{ iconContent }}</i>
+  <span>{{ buttonText }}</span>
+  <i *ngIf="detail == true"></i>
+</button>

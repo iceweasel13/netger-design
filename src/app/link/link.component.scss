@@ -36,11 +36,16 @@
 
 
 @media (max-width: 1024px) {
-    .row {
-        flex-direction: column;
-        .col-4{
-            width: auto;
+    .container-fluid{
+        .row {
+            width: 100%;
+            flex-direction: column;
+            .col-4{
+                width: auto;
+                flex: auto;
+            }
+    
         }
-
     }
+    
 }
