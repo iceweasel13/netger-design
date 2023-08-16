@@ -35,7 +35,6 @@
     }
 
     .widget2{
-        height: 420px;
         background-color: #edf2f7;
         text-align: center;
         padding: 96px;
@@ -154,6 +153,22 @@
     
         }
         }  
+
+        .widget2{
+            padding: 40px;
+            .widget2Col{
+                h1{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .widget3{
+            
+        }
     }
     
     }
