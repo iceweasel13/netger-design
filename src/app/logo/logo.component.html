@@ -1,18 +1,20 @@
-<div class="container-fluid ">
+<div class="container">
   <div class="our">
     <h1>Our Clients</h1>
     <div class="line">
-        <span class="yellowLine"></span>
+      <span class="yellowLine"></span>
     </div>
     <p>List of some our customers preferring Netger for their digital services!</p>
   </div>
-    <div class="logo-container ">
-      <div class="row">
-      <div class="logo-item col-6 col-md-4  col-lg-2" *ngFor="let log of logo">
-        <img [src]="log" alt="netger logo" >
-        
+  <div class="logo-container ">
+    <div class="row">
+      <div class="logo-item col-6 col-md-4  col-lg-2 " *ngFor="let log of logo">
+        <div class="imageFrame" style="display: flex; justify-content: center; align-content: center; ">
+          <img [src]="log" alt="netger logo">
+        </div>
+
       </div>
-    </div>  
+    </div>
   </div>
-    
+
 </div>

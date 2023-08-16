@@ -1,11 +1,16 @@
-.container-fluid{
+.container{
   
   .logo-container {
-    
+    .row{
+      justify-content: center;
+      margin-bottom: 32px;
+    }
     .logo-item {
-      
+      display: flex;
       filter: grayscale(100%);
-  
+      .imageFrame{
+        
+      }
       &:hover {
         transition: all;//bak
         filter: grayscale(0%);
@@ -13,7 +18,7 @@
       }
   
       img {
-        
+        object-fit: contain;
         
         max-width: 100%;
         height: auto;
