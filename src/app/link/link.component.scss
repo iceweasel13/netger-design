@@ -1,9 +1,8 @@
 .container-fluid{
     background-color: #edf2f7;
     .row{
-        padding-left: 110px;
-        padding-right: 110px;
-        .col-4{
+
+        .linkCol{
             border: 1px solid #dbd9dd;
             &:hover{
                 background-color: white;
@@ -38,11 +37,8 @@
 @media (max-width: 1024px) {
     .container-fluid{
         .row {
-            width: 100%;
-            flex-direction: column;
-            .col-4{
-                width: auto;
-                flex: auto;
+            .linkCol{
+
             }
     
         }

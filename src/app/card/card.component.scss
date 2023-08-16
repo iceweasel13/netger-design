@@ -1,7 +1,5 @@
 .container-fluid{
-    background-color: #edf2f7;
-    padding: 96px;
-    
+    background-color: #edf2f7; 
     .line{ 
         margin-left: 130px;
         margin-top: 20px;
@@ -26,8 +24,7 @@
     }
 
     .row{
-        border-radius: 10px;
-        .col-3{
+        .imageFrame{
             background-color: #edf2f7;
             transition: transform 0.3s;
             padding: 15px;
@@ -57,18 +54,15 @@
             }
             
         }
-        .col-4{
+        .leftContent{
             margin-top: 10px;
-            padding-left: 70px;
-            padding-right: 30px;
             p{
                 margin-top: 20px;
                 text-align: center;
             }
         }
-        .col-8{
+        .rightContent{
             height: 300px;
-            display: flex;
         }
     }
 }
