@@ -1,186 +1,88 @@
-* {
-  --text-opacity: 1;
-
-  font-weight: 600;
+a,
+button {
   font-size: 14px;
-  color: rgba(74, 85, 104, var(--text-opacity));
+  font-weight: 700;
+  color: rgb(61, 58, 58);
 }
-html {
-  font-family: "Poppins", sans-serif;
+.superNav {
+  font-size: 13px;
 }
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
 }
-
-.dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
+.dropdown > .dropdown-item:active {
   pointer-events: none;
 }
-.btn-grow:hover {
+ul > li > a:hover,
+.dropdown-toggle:hover {
+  background-color: #ecc94a;
+  border-radius: 0%;
+}
+.buton:hover {
   transform: scale(1.1);
-  transition: 0.2s (ease);
-  border-style: solid;
-  border-color: rgb(179, 203, 24);
+  background-color: #f8da70;
+
+  border-radius: 50px !important;
 }
 
-i.fa {
-  transform: rotate(90deg);
+.navbar-icon > button {
+  border-radius: 50px;
+
+  border: none;
+  padding: 10px 10px 10px 10px;
 }
-ul > li {
-  margin-right: 0.2rem;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 0;
-  box-sizing: border-box;
-  vertical-align: top;
-  display: inline-block;
+.navbar-icon > button > i {
+  padding-right: 5px;
 }
-nav.navbar {
-  margin-left: 18%;
-  margin-right: 18%;
+#offer {
+  background-color: #ecc94a;
+  color: #744210;
+  font-weight: 500;
 }
-ul {
-  margin: 0;
-  padding: 0;
+#call {
+  background-color: #37a169;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
 }
-.logo {
+
+.offcanvas {
+  background-color: #ecc94a;
 }
-/* Navbar */
-.navbar {
+.ofcanvas > a > p {
+  font-weight: 400;
+  font-size: medium;
+  color: #744210;
+}
+.ofcanvas > a {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+#saydam {
+  color: #744210;
+  font-size: medium;
+}
+
+.alta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 8px;
-  height: 85px;
-  color: #6c757d;
-}
+  padding: 20px;
+  background-color: #f8da70;
 
-/* Logo */
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Navbar Toggler Button */
-.navbar-toggler {
-  border: none;
-  background-color: transparent;
-}
-
-.navbar-toggler-icon {
-  background-color: transparent;
-  border: none;
-}
-
-/* Navbar Links */
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  margin-right: 4px;
-  padding: 2px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #6c757d;
-}
-
-.navbar-nav .nav-item {
-  position: relative;
-  list-style: none;
-}
-
-.navbar-nav .nav-link {
-  padding: 0.5rem 1rem;
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #007bff;
-}
-
-/* Dropdown */
-.dropdown-menu {
+  margin-top: 20px;
   position: absolute;
-  display: none;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #744210;
+  font-size: small;
 }
-
-.dropdown-menu.show {
-  display: block;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: #007bff;
-  background-color: #f8f9fa;
-}
-
-/* Button */
-.btn-warning {
-  color: #333;
-  background-color: #ffc107;
-  border-color: #ffc107;
-}
-
-.btn-warning:hover {
-  color: #333;
-  background-color: #e0a800;
-  border-color: #d39e00;
-}
-
-.btn-grow {
-  transition: transform 0.2s;
-}
-
-.btn-grow:hover {
-  transform: scale(1.05);
-}
-
-/* FontAwesome Icon */
-.fa-phone.rotate {
-  transform: rotate(0deg);
-  transition: transform 0.3s;
-}
-
-.btn-grow:hover .fa-phone.rotate {
-  transform: rotate(90deg);
-}
-
-/* Utility Classes */
-.rounded-pill {
+.alta > a {
   border-radius: 50px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-yellow-500 {
-  border-color: #f6e05e;
-}
-
-.bg-yellow-400 {
-  background-color: #f6e05e;
-}
-
-.text-yellow-900 {
-  color: #f6e05e;
+  border: 1px solid #744210;
+  padding: 5px 5px 5px;
+  font-size: small;
 }
