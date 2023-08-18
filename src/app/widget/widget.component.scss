@@ -69,23 +69,21 @@
 
     .widget3 {
         background-color: #f7fafc;
-        padding-top: 96px;
-        padding-bottom: 96px;
         padding: 96px;
         .row {
             justify-content: center;
             background-color: #f7fafc;
 
             .desktop {
-                height: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
-
+                padding: 20px;
                 .desktopCampaign {
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
                     background-color: white;
                     justify-content: space-between;
                     display: flex;
-                    padding: 10px; 
+                    padding: 0px; 
                     height: 300px;
                     .desktopText {
                         flex-direction: column;
@@ -93,19 +91,12 @@
                         h5 {}
 
                         p {
-                            flex: 1;
                         }
                     }
                     .desktopImg{
                         .img{
-                            max-width: 100%;
                             max-height: 100%;
                         }
-                        flex: 1;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;    
                         
                     }
                     
@@ -249,5 +240,15 @@
             }
         }
     }
+
+}
+
+@media (max-width: 990px){
+    .container-fluid{
+        .widget3{
+        padding: 5%;
+    }
+    }
+    
 
 }
