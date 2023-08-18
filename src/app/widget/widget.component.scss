@@ -1,174 +1,253 @@
-.container-fluid{
+.container-fluid {
     padding: 0;
-    .widget1{
+    .widget1 {
         padding: 96px;
         background-color: #f7fafc;
-    .row{
-        display: flex;
-        align-items: center;
-        .widget1Col{
-            .leftContent{
-             position: relative;
-                .img{
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-            .rightContent{
-                font-family: PoppinsBold;
-                text-align: left;
-                h1{
-                    font-size: 2.25rem;
-                }
-                p{  
-                    font-family: Rubik;
 
+        .row {
+            display: flex;
+            align-items: center;
 
-                    font-size: 1.125rem;
-                    .font-bold{
-                        font-weight: 800;
+            .widget1Col {
+                .leftContent {
+                    position: relative;
+
+                    .img {
+                        max-width: 100%;
+                        height: auto;
                     }
                 }
-            }     
+
+                .rightContent {
+                    font-family: PoppinsBold;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 2.25rem;
+                    }
+
+                    p {
+                        font-family: Rubik;
+
+
+                        font-size: 1.125rem;
+
+                        .font-bold {
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
         }
     }
-    }
 
-    .widget2{
+    .widget2 {
         background-color: #edf2f7;
         text-align: center;
         padding: 96px;
-        .line{
-            margin: 16px auto;  
-            width: 90px; 
+
+        .line {
+            margin: 16px auto;
+            width: 90px;
             height: 8px;
             background-color: #ecc94b;
             border-radius: 9999px;
         }
-        h1{
+
+        h1 {
             font-family: PoppinsBold;
             font-size: 1.875rem;
             font-weight: 700;
             margin-top: 16px;
         }
-        p{
+
+        p {
             font-family: Rubik;
             font-size: 1.125rem;
         }
     }
 
-    .widget3{
+    .widget3 {
         background-color: #f7fafc;
-        .row{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        padding: 96px;
+        .row {
             justify-content: center;
-            .col-6{
-                background-color: white;
-                width: 562px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                .content{
+            background-color: #f7fafc;
+
+            .desktop {
+                height: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .desktopCampaign {
+                    background-color: white;
+                    justify-content: space-between;
                     display: flex;
-                    :hover{
-                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                        transition: .3s;
+                    padding: 10px; 
+                    height: 300px;
+                    .desktopText {
+                        flex-direction: column;
+                        height: 100%;
+                        h5 {}
+
+                        p {
+                            flex: 1;
+                        }
                     }
-                    .img{
-                        width: auto;
-                        height: 270px;
+                    .desktopImg{
+                        .img{
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;    
                         
                     }
-                    .compaignText{
-                        padding: 32px;
-                        h2{
-                            font-family: Poppins;
-                            font-size: 1.25rem;
-                            font-weight: 600;
-                            padding-bottom: 10px;
-                            padding-right: 1rem;
-                        }
-                        p{ 
-                            font-family: Rubik;
-                            font-size: 16px;
-                            font-weight: 400;
-                            margin: 0px;
-                        }
-                        
-                    }
-                }   
+                    
+                }
             }
+
+            .mobile {
+                .mobileCampaign {
+                    width: 729px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    background-color: white;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    .mobileText{
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                        padding: 40px;
+                        padding-bottom: 10px;
+                    }
+                    img{
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+            // ---------------------------
+            // .desktopCampaign {
+            //     background-color: white;
+            //     display: flex;
+            //     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            //     margin-bottom: 20px;
+            //     justify-content: space-between;
+            //     img {
+            //         max-width: 50%;
+            //         max-height: 50%;
+            //     }
+            //     .campaignText {
+            //         padding: 40px;
+            //         padding-top: 60px;
+            //         h5 {
+            //             margin-bottom: 1rem;
+            //             font-size: 1.25rem;
+            //             font-weight: 600;
+            //             font-family: Poppins;
+            //         }
+            //         p {
+            //             margin: 5px 0 0;
+            //             font-family: Rubik;
+            //             font-size: 16px;
+            //         }
+            //     }
+            // }
+            
+
         }
-        h1{
+
+        h1 {
             font-family: PoppinsBold;
             font-size: 1.875rem;
             font-weight: 700;
-            margin-top: 10px;
             text-align: center;
         }
-        .line{
-            margin: 16px auto;  
-            width: 90px; 
-            height: 8px;
+
+        .line {
+            margin: 16px auto;
+            width: 78px;
+            height: 7px;
             background-color: #ecc94b;
             border-radius: 9999px;
         }
     }
-    
+
 }
 
 @font-face {
     font-family: Rubik;
     src: url(../../assets/fonts/Rubik-Regular.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: PoppinsBold;
     src: url(../../assets/fonts/Poppins-Bold.ttf);
-  }
+}
 
 
 
 
 @media (max-width: 1024px) {
-    .container-fluid{
-        .widget1{
+    .container-fluid {
+        .widget1 {
             padding: 40px;
-        .row {
-            .widget1Col{
-                .leftContent{
-                    .img{
-                        width: 100%;
-                    }
-                }
-                .rightContent{
-                    h1{
-                        font-size: 24px;
-                        text-align: center;
-                    }
-                    p{
-                        font-size: 14px;
-                        text-align: center;
-                    }
-                }
-    
-            }
-    
-        }
-        }  
 
-        .widget2{
+            .row {
+                .widget1Col {
+                    .leftContent {
+                        .img {
+                            width: 100%;
+                        }
+                    }
+
+                    .rightContent {
+                        h1 {
+                            font-size: 24px;
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .widget2 {
             padding: 40px;
-            .widget2Col{
-                h1{
+
+            .widget2Col {
+                h1 {
                     font-size: 24px;
                 }
-                p{
+
+                p {
                     font-size: 14px;
                 }
             }
         }
 
-        .widget3{
-            
+        .widget3 {
+            h1 {
+                font-size: 24px;
+            }
+
+            .row {
+            }
         }
     }
-    
-    }
+
+}
