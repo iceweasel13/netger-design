@@ -67,10 +67,9 @@
         }
     }
 
-    .widget3 {
-        background-color: #f7fafc;
-        padding: 96px;
-        .row {
+    .widget3{
+        background-color: #ffffff;
+        .row{
             justify-content: center;
             background-color: #f7fafc;
 
@@ -105,53 +104,25 @@
 
             .mobile {
                 .mobileCampaign {
-                    width: 729px;
-                    padding-left: 0;
-                    padding-right: 0;
                     background-color: white;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                    flex-direction: column;
-                    align-items: center;
                     margin-bottom: 40px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
                     .mobileText{
-                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                        padding: 40px;
+                        margin: 40px;
+                        box-shadow: 0   px 0px 10px rgba(0, 0, 0, 0.1);
                         padding-bottom: 10px;
                     }
                     img{
                         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
                         max-height: 100%;
                         max-width: 100%;
+
                     }
                 }
             }
-            // ---------------------------
-            // .desktopCampaign {
-            //     background-color: white;
-            //     display: flex;
-            //     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            //     margin-bottom: 20px;
-            //     justify-content: space-between;
-            //     img {
-            //         max-width: 50%;
-            //         max-height: 50%;
-            //     }
-            //     .campaignText {
-            //         padding: 40px;
-            //         padding-top: 60px;
-            //         h5 {
-            //             margin-bottom: 1rem;
-            //             font-size: 1.25rem;
-            //             font-weight: 600;
-            //             font-family: Poppins;
-            //         }
-            //         p {
-            //             margin: 5px 0 0;
-            //             font-family: Rubik;
-            //             font-size: 16px;
-            //         }
-            //     }
-            // }
             
 
         }

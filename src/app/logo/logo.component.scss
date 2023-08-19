@@ -1,47 +1,55 @@
-.logo-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  .logo-item {
-    
-    filter: grayscale(100%);
-
-    &:hover {
-      transition: all;//bak
-      filter: grayscale(0%);
-      
+.container{
+  
+  .logo-container {
+    .row{
+      justify-content: center;
+      margin-bottom: 32px;
     }
-
-    img {
-      
-      padding: 12px;
-      max-width: 100%;
-      height: auto;
-      
+    .logo-item {
+      display: flex;
+      filter: grayscale(100%);
+      .imageFrame{
+        
+      }
+      &:hover {
+        transition: all;//bak
+        filter: grayscale(0%);
+        
+      }
+  
+      img {
+        object-fit: contain;
+        
+        max-width: 100%;
+        height: auto;
+        
+      }
     }
   }
+  .our{
+    max-width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 96px;
+    .line{
+        margin: 16px auto;  
+        width: 90px; 
+        height: 8px;
+        background-color: #ecc94b;
+        border-radius: 9999px;
+    }
+    h1{
+        font-family: PoppinsBold;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-top: 16px;
+    }
+    p{
+        font-family: Rubik;
+        font-size: 1.125rem;
+    }
+  }
+  //ngFor ile tyscr çekicem 
+  
 }
-.our{
-  max-width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  text-align: center;
-  padding: 96px;
-  .line{
-      margin: 16px auto;  
-      width: 90px; 
-      height: 8px;
-      background-color: #ecc94b;
-      border-radius: 9999px;
-  }
-  h1{
-      font-family: PoppinsBold;
-      font-size: 1.875rem;
-      font-weight: 700;
-      margin-top: 16px;
-  }
-  p{
-      font-family: Rubik;
-      font-size: 1.125rem;
-  }
-}
-//ngFor ile tyscr çekicem 

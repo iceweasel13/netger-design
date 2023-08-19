@@ -1,81 +1,157 @@
 <nav
-  class="navbar navbar-expand-lg navbar-light bg-white px-8 text-gray-700"
-  style="height: 85px"
+  class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm"
 >
-  <div class="">
-    <img src="../../assets/logo-s.png" class="navbar-brand" href="#" />
-  </div>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div
-    class="collapse navbar-collapse d-lg-flex justify-content-between"
-    id="navbarSupportedContent"
-  >
-    <ul
-      class="navbar-nav ml-auto d-flex align-items-center mr-4 px-2 font-weight-bold text-sm text-gray-700"
-    >
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          role="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          data-hover="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-          >Products</a
-        >
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Okutara</a>
-          <a class="dropdown-item" href="#">Netger Avukat</a>
-          <a class="dropdown-item" href="#">Netger Doktor</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          role="button"
-          data-toggle="dropdown"
-          data-hover="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-          >Services</a
-        >
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">LogoGer</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Corporate Web Site</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>  
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button
-        class="btn btn-warning rounded-pill border-2 border-yellow-500 bg-yellow-400 text-yellow-900 transition-fast btn-grow"
-        type="submit"
-      >
-        <i class="fa fa-phone rotate"></i> Let us Call You
+  <div class="container">
+    <a class="navbar-brand" href="#"
+      ><img src="../../../assets/logo-s.png" />
+    </a>
+    <a class="navbar-icon d-lg-none" href="#">
+      <button class="" id="offer">
+        <i class="fa-solid fa-message"></i>Get offer
       </button>
-    </form>
+    </a>
+    <a class="navbar-icon d-lg-none" id="call" href="#">
+      <button class="" id="call"><i class="fa-solid fa-phone"></i>Call</button>
+    </a>
+    <!--Menu buton-->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <button
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Products
+          </button>
+          <ul class="dropdown-menu dropdown-menu">
+            <li><a class="dropdown-item" href="#">Okutara</a></li>
+            <li><a class="dropdown-item" href="#">Netger Avukat</a></li>
+            <li><a class="dropdown-item" href="#">Netger Doktor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Services
+          </button>
+          <ul class="dropdown-menu dropdown-menu">
+            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+            <li><a class="dropdown-item" href="#">Web Design</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Social Media Consultacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Photo and Video Shooting</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LogoGer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Corporate Web Site</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item buton">
+          <a
+            class="nav-link mx-2"
+            style="background-color: #ecc94a; border-radius: 50px"
+            href="#"
+            ><i class="fa-solid fa-phone me-1"></i> Let us Call You</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+<div
+  class="offcanvas offcanvas-start"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel"
+>
+  <div class="offcanvas-header">
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="ofcanvas">
+      <a
+        >Logoger
+        <p>Logo tasarim ve kurumsal kimlik</p>
+      </a>
+      <a
+        >Products
+        <p>Okutara, Netger Avukta, Netger Doktor</p>
+      </a>
+      <a
+        >Services
+        <p></p
+      ></a>
+      <a
+        >Portfolio
+        <p>
+          Digital Marketing, Web Design, Social Media Consultacy, Mobile App
+          Development, Photo and Video Shooting
+        </p>
+      </a>
+      <a
+        >Blog
+        <p></p>
+      </a>
+      <a
+        >About us
+        <p></p>
+      </a>
+      <a
+        >Contact
+        <p></p>
+      </a>
+      <a id="saydam"
+        >Campaings
+        <p></p>
+      </a>
+      <a id="saydam"
+        >Human Resources
+        <p></p
+      ></a>
+      <a id="saydam"
+        >Fatura Odeme
+        <p></p
+      ></a>
+      <div class="alta">
+        <a id="alt"><i class="fa-solid fa-phone"></i>+90 212 951 02 25</a>
+
+        <a id="alt">Let us Call You</a>
+
+        <a id="alt"><i class="fa-solid fa-globe"></i> TR</a>
+      </div>
+    </div>
+  </div>
+</div>
